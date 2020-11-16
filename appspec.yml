@@ -3,3 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/code-build/shark-nodejs
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 100
+      runas: root
