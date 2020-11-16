@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo pm2 stop
+sudo yum update -y 
+sudo yum install -y nodejs
