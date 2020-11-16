@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo yum update -y 
 sudo yum install -y nodejs
+sudo yum install -y httpd
 cd /home/code-build/shark-nodejs
 sudo pm2 stop app.js
