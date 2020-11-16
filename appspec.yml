@@ -3,3 +3,9 @@ os: linux
 files:
   - source: /
     destination: /home/code-build/shark-nodejs
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: ec2-user
+
