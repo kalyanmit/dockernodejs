@@ -5,6 +5,10 @@ files:
     destination: /home/code-build/shark-nodejs
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/before.sh
+      timeout: 60
+      runas: root
+  AfterInstall:
+    - location: scripts/after.sh
       timeout: 60
       runas: root
