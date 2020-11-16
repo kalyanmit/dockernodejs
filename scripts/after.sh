@@ -1,4 +1,4 @@
-###after####
+### after ####
 #!/bin/bash
 cd /home/code-build/shark-nodejs
 sudo npm install
