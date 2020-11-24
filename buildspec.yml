@@ -1,19 +1,18 @@
 version: 0.2
 
 phases:
-  install:
+  pre_build:
     commands:
-      - sudo yum install -y docker
-      - sudo systemctl enable docker
-      - sudo systemctl restart docker
-  pre-build:
-    commands:
-      - docker build -t dockernodes/shark .
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 246540942872.dkr.ecr.us-east-1.amazonaws.com
   build:
     commands:
-      - docker images
-      - docker run -d -p 8080:8080 dockernodes/shark 
-# Include only the files required for your application to run.
-#artifacts:
-  #files:
-    #- '**/*'
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker build -t nodejs-shark .
+      - docker tag nodejs-shark:latest 246540942872.dkr.ecr.us-east-1.amazonaws.com/nodejs-shark:docker-shark-nodejs
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push 246540942872.dkr.ecr.us-east-1.amazonaws.com/nodejs-shark:docker-shark-nodejs
