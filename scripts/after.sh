@@ -1,6 +1,3 @@
 ### after ####
 #!/bin/bash
-cd /home/code-build/shark-nodejs
-sudo npm install
-sudo npm install pm2 -g
-sudo pm2 restart app.js
+docker run -d -p 8080:8080 246540942872.dkr.ecr.us-east-1.amazonaws.com/nodejs-shark:docker-shark-nodejs

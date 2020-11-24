@@ -1,4 +1,5 @@
 ### before ###
 #!/bin/bash
-sudo yum install -y nodejs
-sudo yum remove -y httpd
+yum install -y docker
+systemctl enable docker 
+systemctl start docker
