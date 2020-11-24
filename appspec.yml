@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/code-build/shark-nodejs
+    destination: /var/www/docker
 hooks:
   BeforeInstall:
     - location: scripts/before.sh
