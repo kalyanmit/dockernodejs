@@ -1,5 +1,5 @@
 ### before ###
 #!/bin/bash
-yum install -y docker
-systemctl enable docker 
-systemctl start docker
+sudo yum install -y docker
+sudo systemctl enable docker 
+sudo systemctl start docker
