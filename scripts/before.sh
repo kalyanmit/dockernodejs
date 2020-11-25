@@ -1,5 +1,3 @@
 ### before ###
 #!/bin/bash
-sudo yum install -y docker
-sudo systemctl enable docker 
-sudo systemctl start docker
+sudo yum install -y httpd

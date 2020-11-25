@@ -8,3 +8,7 @@ hooks:
     - location: scripts/before.sh
       timeout: 60
       runas: root
+  AfterInstall:
+    - location: scripts/after.sh
+      timeout: 60
+      runas: root
