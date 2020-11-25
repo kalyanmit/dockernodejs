@@ -27,5 +27,6 @@ phases:
       - cat imagedefinitions.json 
       #- zip -r imagedefinitions.json.zip imagedefinitions.json
       #- aws s3 cp ./imagedefinitions.json.zip s3://dockernodejs
+      # docker
 artifacts:
     files: imagedefinitions.json
