@@ -25,7 +25,7 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"docker-80","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json 
-      - zip -r imagedefinitions.json.zip imagedefinitions.json
-      - aws s3 cp ./imagedefinitions.json.zip s3://dockernodejs
+      #- zip -r imagedefinitions.json.zip imagedefinitions.json
+      #- aws s3 cp ./imagedefinitions.json.zip s3://dockernodejs
 artifacts:
     files: imagedefinitions.json
