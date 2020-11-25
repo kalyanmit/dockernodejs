@@ -24,6 +24,6 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"nodejs-shark","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-      #- cat imagedefinitions.json 
+      - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
