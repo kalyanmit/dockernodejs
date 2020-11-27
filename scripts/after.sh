@@ -13,6 +13,6 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 
 #### docker-compose up ####
-cd /tmp/docker-git
+cd /tmp/dockernodejs
 sudo docker-compose down
 sudo docker-compose up -d

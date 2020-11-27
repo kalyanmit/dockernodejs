@@ -3,4 +3,4 @@
 sudo yum update -y
 sudo yum install -y httpd
 
-sudo rm -rf /tmp/docker-git
+sudo rm -rf /tmp/dockernodejs
