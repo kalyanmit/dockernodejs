@@ -20,3 +20,4 @@ sudo docker-compose up -d
 
 ### ghost ##
 sudo docker run -d -p 3001:2368 ghost
+systemctl restart nginx
