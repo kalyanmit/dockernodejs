@@ -4,10 +4,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: redis
+    image: docker-nodejs
     ports:
       - "80:8080"
-    container_name: node-api
+    container_name: docker-nodejs
     #volumes:
      #  - ./api:/usr/src/app/api
       # - /usr/src/app/api/node_modules
