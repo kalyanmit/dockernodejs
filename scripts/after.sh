@@ -15,4 +15,5 @@ docker-compose --version
 #### docker-compose up ####
 cd /tmp/dockernodejs
 sudo docker-compose down
+sudo docker rmi -f redis
 sudo docker-compose up -d
