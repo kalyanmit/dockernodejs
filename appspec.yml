@@ -1,0 +1,16 @@
+  
+### appspec.yml ####
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /tmp/docker-git
+hooks:
+  BeforeInstall:
+    - location: scripts/before.sh
+      timeout: 120
+      runas: root
+  AfterInstall:
+    - location: scripts/after.sh
+      timeout: 120
+      runas: root
