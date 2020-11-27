@@ -14,4 +14,5 @@ docker-compose --version
 
 #### docker-compose up ####
 cd /tmp/docker-git
+sudo rm -rf docker-compose.yml
 sudo docker-compose up -d
