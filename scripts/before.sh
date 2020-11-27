@@ -3,5 +3,4 @@
 sudo yum update -y
 sudo yum install -y httpd
 
-cd /tmp/docker-git
-sudo rm -rf docker-compose 
+sudo rm -rf /tmp/docker-git
