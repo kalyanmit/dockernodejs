@@ -4,7 +4,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/docker-git
+    destination: /tmp/dockernodejs
 hooks:
   BeforeInstall:
     - location: scripts/before.sh
