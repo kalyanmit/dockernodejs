@@ -13,7 +13,7 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 
 #### docker-compose up ####
-cd /tmp/dockernodejs/docker
+cd /home/kalyan/dockernodejs
 sudo docker-compose down
 sudo docker rmi -f docker-nodejs
 sudo docker-compose up -d
