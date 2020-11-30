@@ -13,8 +13,8 @@ hooks:
   BeforeInstall:
     - location: scripts/before.sh
       timeout: 120
-      runas: kalyan ## can run as root user also
+      runas: root ## can run as root user also
   AfterInstall:
     - location: scripts/after.sh
       timeout: 120
-      runas: kalyan
+      runas: root
