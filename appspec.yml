@@ -4,17 +4,17 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/dockernodejs/docker
+    destination: /home/kalyan/dockernodejs
 permissions:
-  - object: /tmp/dockernodejs
-    owner: kk
-    group: kk
+  - object: /home/kalyan
+    owner: kalyan
+    group: kalyan
 hooks:
   BeforeInstall:
     - location: scripts/before.sh
       timeout: 120
-      runas: kk
+      runas: kalyan
   AfterInstall:
     - location: scripts/after.sh
       timeout: 120
-      runas: kk
+      runas: kalyan
