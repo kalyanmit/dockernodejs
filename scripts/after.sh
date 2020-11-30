@@ -18,6 +18,6 @@ sudo docker-compose down
 sudo docker rmi -f docker-nodejs
 sudo docker-compose up -d
 
-### ghost ##
+### ghost ###
 #sudo docker run -d -p 3001:2368 ghost
 #systemctl restart nginx
