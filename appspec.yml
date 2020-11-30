@@ -4,11 +4,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/kalyan/dockernodejs
+    destination: /home/developer/dockernodejs
 permissions:
-  - object: /home/kalyan
-    owner: kalyan  ### Add user kalyan in the ec2 instances and we can deploy these file to the ec2-instances. Else codedeploy fails for not mentioning appropriate user in the appspec.yml file
-    group: kalyan
+  - object: /home/developer
+    owner: developer  ### Add user kalyan in the ec2 instances and we can deploy these file to the ec2-instances. Else codedeploy fails for not mentioning appropriate user in the appspec.yml file
+    group: developer
 hooks:
   BeforeInstall:
     - location: scripts/before.sh
