@@ -13,11 +13,11 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 
 #### docker-compose up ####
-cd /tmp/dockernodejs
+cd /tmp/dockernodejs/docker
 sudo docker-compose down
 sudo docker rmi -f docker-nodejs
 sudo docker-compose up -d
 
 ### ghost ##
-sudo docker run -d -p 3001:2368 ghost
-systemctl restart nginx
+#sudo docker run -d -p 3001:2368 ghost
+#systemctl restart nginx
