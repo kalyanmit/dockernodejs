@@ -7,7 +7,7 @@ files:
     destination: /home/kalyan/dockernodejs
 permissions:
   - object: /home/kalyan
-    owner: kalyan
+    owner: kalyan  ### Add user kalyan in the ec2 instances and we can deploy these file to the ec2-instances. Else codedeploy fails for not mentioning appropriate user in the appspec.yml file
     group: kalyan
 hooks:
   BeforeInstall:
